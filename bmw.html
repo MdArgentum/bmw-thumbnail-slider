@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Project Thumbnail Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body_container">
+        <div class="container">
+
+
+            <!-- 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@ Top Header Start @@@@@@@@@@@@@@@@@@@
+        -->
+
+
+            <div class="top_header">
+                <div class="header_container">
+                    <!-- For Currency Dropdown -->
+                    <div class="currency-dropdown">
+                        <button class="currency-dropdown-toggle">
+                            <span class="currency-text">Currency (USD)</span>
+                            <i class="fas fa-chevron-down"></i></button>
+                        <ul class="currency-dropdown-menu">
+                            <li><a href="#" data-value="USD">USD</a></li>
+                            <li><a href="#" data-value="EUR">EUR</a></li>
+                            <li><a href="#" data-value="GBP">GBP</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="top_header_point">
+
+
+                        <div class="top_item top_left_item">
+                            <div class="top_icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="top_title">
+                                Top Bar Phone
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_icon">
+                                <i class="fa-regular fa-lightbulb"></i>
+                            </div>
+                            <div class="top_title">
+                                Top Bar Address
+                            </div>
+                        </div>
+
+                        <div class="top_item">
+                            <div class="top_icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="top_title">
+                                Top Bar Working Hours Labe
+                            </div>
+                        </div>
+
+                        <div class="top_item bar_top">
+                            <div class="top_title bar_top_title">
+                                Dealer Profile
+                            </div>
+                        </div>
+
+                        <div class="top_item">
+                            <div class="top_title">
+                                Seller Profile
+                            </div>
+                        </div>
+
+                        <div class="top_item social_top">
+                            <a href="@">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="top_item">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="top_item">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="top_item">
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="top_item">
+                            <a href="#">
+                                <i class="fa-brands fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@  Navbar Her Start Form @@@@@@@@@@@@@@@@@@@
+        -->
+            <section class="header_nav">
+                <nav class="navbar">
+                    <!-- for Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="item.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- for Page navbar -->
+                    <ul class="nav_page">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Inventory</a></li>
+                        <li><a href="#">Listing</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Details</a></li>
+                    </ul>
+
+                    <!-- Navar Bar Button -->
+                    <div class="nav_button">
+                        <div class="button_item">
+                            <a href="">
+                                <i class="fa-solid fa-gauge"></i>
+                            </a>
+                        </div>
+
+                        <div class="button_item">
+                            <a href="">
+                                <i class="fa-solid fa-circle-user"></i>
+                            </a>
+                        </div>
+
+                        <div class="button_item">
+                            <a class="car_button" href="">
+                                <i class="fa-solid fa-car"></i>
+                                Add Your Item
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+
+            <!-- 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@
+        -->
+            <div class="content_body">
+
+                <div class="content_body_left">
+                    <!-- Car Price Title -->
+                    <div class="angle_header">
+                        <div class="left-side">
+                            <p class="created_userd">CERTIFIED USED 2021 <br>
+                                <span class="bmw">BMW M5</span>
+                            </p>
+                        </div>
+
+                        <div class="right-side">
+                            <p><span class="buy_for">Buy for</span> <span class="less_bmw_price">$27,000</span> <br>
+                                <b>MSRP</b> <span class="price_bmw">$25,500</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Thumbnail Caurosel -->
+
+                    <!-- 
+                        @@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+                        @@@@@@@@@@@@@@@@@@@@@@@@@
+                     -->
+
+
+                    <div id="slider-wrapper">
+                        <div id="image-slider">
+                            <ul>
+                                <li class="active-img">
+                                    <img src="img/car-1.jpg" alt="" onclick="openModal(); currentSlide(1)" />
+                                </li>
+                                <li>
+                                    <img src="img/car-2.jpg" alt="" onclick="openModal(); currentSlide(2)" />
+                                </li>
+                                <li>
+                                    <img src="img/car-3.jpg" alt="" onclick="openModal(); currentSlide(3)" />
+                                </li>
+                                <li>
+                                    <img src="img/car-4.jpg" alt="" onclick="openModal(); currentSlide(4)" />
+                                </li>
+                                <li>
+                                    <img src="img/car-5.jpg" alt="" onclick="openModal(); currentSlide(5)" />
+                                </li>
+                                <li>
+                                    <img src="img/car-6.jpg" alt="" onclick="openModal(); currentSlide(6)" />
+                                </li>
+                                <li>
+                                    <img src="img/car-7.jpg" alt="" onclick="openModal(); currentSlide(7)" />
+                                </li>
+
+
+
+                            </ul>
+
+                        </div>
+
+                        <div id="thumbnail">
+                            <div id="prevBtn" class="nextprivbtn">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </div>
+                            <ul>
+                                <li class="active"><img src="img/car-1.jpg" alt="" />
+                                </li>
+                                <li><img src="img/car-2.jpg" alt="" /></li>
+                                <li><img src="img/car-3.jpg" alt="" /></li>
+                                <li><img src="img/car-4.jpg" alt="" /></li>
+                                <li><img src="img/car-5.jpg" alt="" /></li>
+                                <li><img src="img/car-6.jpg" alt="" /></li>
+                                <li><img src="img/car-7.jpg" alt="" /></li>
+
+
+                            </ul>
+                            <div class="nextprivbtn" id="nextBtn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="mySlides">
+
+                                <img src="img/car-1.jpg" style="width:100%; height: 70vh;">
+                            </div>
+
+                            <div class="mySlides">
+
+                                <img src="img/car-2.jpg" style="width:100%; height: 70vh;">
+                            </div>
+
+                            <div class="mySlides">
+
+                                <img src="img/car-3.jpg" style="width:100%; height: 70vh;">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="img/car-4.jpg" style="width:100%; height: 70vh;">
+                            </div>
+                            <div class="mySlides">
+                                <img src="img/car-5.jpg" style="width:100%; height: 70vh;">
+                            </div>
+                            <div class="mySlides">
+                                <img src="img/car-6.jpg" style="width:100%; height: 70vh;">
+                            </div>
+                            <div class="mySlides">
+                                <img src="img/car-7.jpg" style="width:100%; height: 70vh;">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <!-- Light Box Slider That is -->
+                            <div class="column">
+                                <img class="demo cursor" src="img/car-1.jpg" style="width:100%"
+                                    onclick="currentSlide(1)" alt="Nature and sunrise">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/car-2.jpg" style="width:100%"
+                                    onclick="currentSlide(2)" alt="Snow">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/car-3.jpg" style="width:100%"
+                                    onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/car-4.jpg" style="width:100%"
+                                    onclick="currentSlide(4)" alt="Northern Lights">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/car-5.jpg" style="width:100%"
+                                    onclick="currentSlide(5)" alt="Northern Lights">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/car-6.jpg" style="width:100%"
+                                    onclick="currentSlide(6)" alt="Northern Lights">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/car-7.jpg" style="width:100%"
+                                    onclick="currentSlide(7)" alt="Northern Lights">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- 
+                        @@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                        Car Info Section
+                        @@@@@@@@@@@@@@@@@@@@@@@@@
+                     -->
+
+                    <div class="car_info">
+                        <div class="info_section">
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Body</span>
+                                </div>
+                                <div class="car_info_title">
+                                    Hatchback
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Transm</span>
+                                </div>
+                                <div class="car_info_title">
+                                    Manual
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Year</span>
+                                </div>
+                                <div class="car_info_title">
+                                    2021
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Exterior</span>
+                                </div>
+                                <div class="car_info_title">
+                                    Obsidian
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">History</span>
+                                </div>
+                                <div class="car_info_title">
+                                    N/A
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="info_section">
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name"> Make</span>
+                                </div>
+                                <div class="car_info_title">
+                                    BMW
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Fuel Type</span>
+                                </div>
+                                <div class="car_info_title">
+                                    Gasoline
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Mileage</span>
+                                </div>
+                                <div class="car_info_title">
+                                    50000 mi
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Interior</span>
+                                </div>
+                                <div class="car_info_title">
+                                    Grey
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Stock ID</span>
+                                </div>
+                                <div class="car_info_title">
+                                    153093
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="info_section">
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Model</span>
+                                </div>
+                                <div class="car_info_title">
+                                    M5
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Engine</span>
+                                </div>
+                                <div class="car_info_title">
+                                    6,2L V8
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">Drive</span>
+                                </div>
+                                <div class="car_info_title">
+                                    RWD
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name"> Registere</span>
+                                </div>
+                                <div class="car_info_title">
+                                    N/A
+                                </div>
+                            </div>
+                            <div class="car_info_data">
+                                <div class="car_data">
+                                    <i class="fa-solid fa-car"></i> <span class="car_info_name">VIN: </span>
+                                </div>
+                                <div class="car_info_title">
+                                    452541 5565
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="features_section">
+                        <h2 class="features">FEATURES</h2>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <h3>Comfort</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> A/C: Front
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Backup Camera
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Cruise Control
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Navigation
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="grid-item">
+                                <h3>Entertainment</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> MP3 Player
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Premium Audio
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> AM/FM Stereo
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> DVD System
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid-item">
+                                <h3>Safety</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Airbag: Driver
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Air: Passenger
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Security System
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Antilock Brakes
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid-item">
+                                <h3>Seats</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-chair"></i> Bucket Seats
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Heated Seats
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Power Seats
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i> Memory Seats
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h2 class="features seller_notes">SELLER'S NOTES</h2>
+                        <p class="sellers_note">
+                            Fusce viverra, ligula quis pellentesque interdum, leo felis congue dui, ac accumsan sem
+                            nulla id lorem. Praesent ut tristique dui, nec condimentum lacus. Maecenas lobortis ante id
+                            egestas placerat. Nullam at ultricies lacus. Nam in nulla consectetur, suscipit mauris eu,
+                            fringilla augue. Phasellus gravida, dui quis dignissim tempus, tortor orci tristique leo, ut
+                            congue diam ipsum at massa. Pellentesque ut vestibulum erat. Donec a felis eget tellus
+                            laoreet ultrices.
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+                <div class="content_body_right">
+                   
+
+                    <div class="profile">
+                        <div class="pro_pic">
+                            <img width="55" height="55" src="img/car-1.jpg" alt="">
+                        </div>
+                        <div class="pro_name">
+                            <span class="name">Talal Ali</span>
+                            <br>
+                            <span class="pro_title">Private Seller</span>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Hidden Phone Number Section -->
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="phone_number">
+                            <span class="hidden_number">(88*******</span>
+                            <span class="shown_number_final" style="display: none;">+8801538054041</span>
+                            <button class="show_number">Show Number</button>
+                        </span>
+                    </div>
+
+                    <!-- CHAT VIA WHATSAPP -->
+
+                    <div class="chat_wats">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span class="chat_title">CHAT VIA WHATSAPP</span>
+                    </div>
+
+                    <div class="chat_wats">
+                        <i class="fa-solid fa-message"></i>
+                        <span class="chat_title">MESSAGE TO DEALER</span>
+                    </div>
+
+                    
+
+
+
+
+                </div>
+            </div>
+
+
+            <!-- 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@
+     -->
+
+
+
+            <!-- 
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@
+     -->
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="custom.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.show_number').click(function () {
+                $(this).hide();
+                $('.hidden_number').hide();
+                $('.shown_number_final').show();
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
